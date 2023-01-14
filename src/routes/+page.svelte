@@ -11,7 +11,7 @@
 <section class="section">
   <img class="image" alt="Banner" src={banner} />
   <div class="text">
-    <h2 class="support-text"> Mais novidades em breve</h2>
+    <h2 class="support-text"> Mais novidades em breve!</h2>
     
     <div class="main-text">
       <h1 class="title">
