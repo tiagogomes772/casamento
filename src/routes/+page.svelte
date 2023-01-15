@@ -46,12 +46,11 @@
   .main-text {
     font-family: 'Great Vibes', cursive;
     position: absolute;
-    bottom: 0;
+    bottom: 100px;
     left: 0;
     color: white;
     width: 100%;
     margin: 16px;
-    margin-bottom: 50px;
   }
 
   .title {
@@ -71,7 +70,7 @@
   .support-text {
     font-family: 'Josefin Sans', sans-serif;
     position: absolute;
-    bottom: 0;
+    bottom: 100px;
     right: 5px;
     font-size: 20px;
     color: white;
