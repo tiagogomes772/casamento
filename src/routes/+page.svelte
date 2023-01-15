@@ -10,26 +10,29 @@
 
 <section class="section">
   <img class="image" alt="Banner" src={banner} />
-  <div class="text">
-    <h2 class="support-text"> Mais novidades em breve!</h2>
-    
-    <div class="main-text">
-      <h1 class="title">
-        Diana e Tiago
-        <br />
-      </h1>
-      <h3 class="subtitle">
-        27 Maio 2023
-        <br />
-      </h3>
-    </div>
+  <h2 class="support-text"> Mais novidades em breve!</h2>
+  <div class="main-text">
+    <h1 class="title">
+      Diana e Tiago
+      <br />
+    </h1>
+    <h3 class="subtitle">
+      27 Maio 2023
+      <br />
+    </h3>
   </div>
 
 </section>
 
 <style>
 
+  :global(body) {
+    margin: 0px;
+    overflow: hidden;
+  }
+
   .section {
+    overflow: hidden;
     position: relative;
   }
 
@@ -37,6 +40,7 @@
     width: 100%;
     height: 100vh;
     object-fit: cover;
+    object-position: 56% 10%;
   }
 
   .main-text {
