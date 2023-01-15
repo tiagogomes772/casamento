@@ -34,6 +34,7 @@
   .section {
     overflow: hidden;
     position: relative;
+    height: 100vh;
   }
 
   .image {
@@ -46,7 +47,7 @@
   .main-text {
     font-family: 'Great Vibes', cursive;
     position: absolute;
-    bottom: 100px;
+    bottom: 0;
     left: 0;
     color: white;
     width: 100%;
@@ -57,7 +58,7 @@
     font-size: 60px;
     margin: 0;
     font-weight: 400;
-
+    margin-bottom: 32px;
   }
 
   .subtitle {
@@ -70,7 +71,7 @@
   .support-text {
     font-family: 'Josefin Sans', sans-serif;
     position: absolute;
-    bottom: 100px;
+    bottom: 0;
     right: 5px;
     font-size: 20px;
     color: white;
