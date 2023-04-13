@@ -14,7 +14,6 @@ function App() {
       <main>
         <div className="banner_section">
           <div className="banner_section--text">
-            <h1>Casamento</h1>
             <h2>27 de Maio, 2023 | 12:00</h2>
             <PopupButton
               id="HPHgiG4V"
