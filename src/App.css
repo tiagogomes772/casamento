@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+}
+
+@media all and (min-width: 50px)   {  body  { font-size:0.1em !important;  } }
+@media all and (min-width: 100px)  {  body  { font-size:0.2em !important;  } }
+@media all and (min-width: 200px)  {  body  { font-size:0.4em !important;  } }
+@media all and (min-width: 300px)  {  body  { font-size:0.6em !important;  } }
+@media all and (min-width: 400px)  {  body  { font-size:0.8em !important;  } }
+@media all and (min-width: 500px)  {  body  { font-size:1.0em !important;  } }
+@media all and (min-width: 600px)  {  body  { font-size:1.2em !important;  } }
+@media all and (min-width: 700px)  {  body  { font-size:1.4em !important;  } }
+@media all and (min-width: 800px)  {  body  { font-size:1.6em !important;  } }
+@media all and (min-width: 900px)  {  body  { font-size:1.8em !important;  } }
+@media all and (min-width: 1000px) {  body  { font-size:2.0em !important;  } }
+@media all and (min-width: 1100px) {  body  { font-size:2.2em !important;  } }
+@media all and (min-width: 1200px) {  body  { font-size:2.4em !important;  } }
+@media all and (min-width: 1300px) {  body  { font-size:2.6em !important;  } }
+@media all and (min-width: 1400px) {  body  { font-size:2.8em !important;  } }
+@media all and (min-width: 1500px) {  body  { font-size:3.0em !important;  } }
+@media all and (min-width: 1500px) {  body  { font-size:3.2em !important;  } }
+@media all and (min-width: 1600px) {  body  { font-size:3.4em !important;  } }
+@media all and (min-width: 1700px) {  body  { font-size:3.6em !important;  } }
+
+
+.banner_section {
+  position: relative;
+}
+
+.banner_section--text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.banner_section--text_bottom {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.banner-img {
+  width: 100%;
+}
+
+.my-button {
+  font-size: inherit !important;
+}
+
+
+@media (min-width: 768px) {
+  .introduction-section {
+    margin-top: 42px;
+  }
+  .side-by-side {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.side-by-side__alternate {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.side-by-side p {
+  padding: 16px;
+  color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.side-by-side img {
+  width: 100%;
+}
+
+
+/* CSS */
+.my-button {
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 2rem;
+  padding: calc(.875rem - 2px) calc(1.5rem - 8px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.my-button:hover,
+.my-button:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.my-button:hover {
+  transform: translateY(-1px);
+}
+
+.my-button:active {
+  background-color: #F0F0F1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
