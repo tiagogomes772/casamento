@@ -2,9 +2,13 @@ import { useState } from "react";
 import banner from "./assets/banner.jpg";
 import convite from "./assets/convite.png";
 import rsvp from "./assets/rsvp.jpg";
-import image1 from "./assets/image1.jpg";
-import image2 from "./assets/image2.jpg";
-import image3 from "./assets/image3.jpg";
+import grid1 from "./assets/grid1.jpg";
+import grid2 from "./assets/grid2.jpg";
+import grid3 from "./assets/grid3.jpg";
+import grid4 from "./assets/grid4.jpg";
+import grid5 from "./assets/grid5.jpg";
+import grid6 from "./assets/grid6.jpg";
+import grid7 from "./assets/grid7.jpg";
 import "./App.css";
 import { PopupButton } from "@typeform/embed-react";
 
@@ -14,14 +18,8 @@ function App() {
       <main>
         <div className="banner_section">
           <div className="banner_section--text">
-            <h2>27 de Maio, 2023 | 12:00</h2>
-            <PopupButton
-              id="HPHgiG4V"
-              style={{ fontSize: 20 }}
-              className="my-button"
-            >
-              Confirma a tua presença
-            </PopupButton>
+            <h1>Casamento</h1>
+            <h2>27 de maio | 12h30</h2>
           </div>
           <img
             className="banner-img"
@@ -29,57 +27,62 @@ function App() {
             alt="Casamento da Diana e do Tiago"
           />
         </div>
+        <div className="image__section">
+          <img className="image__section--img" src={grid1} />
+          <img className="image__section--img" src={grid7} />
+          <img className="image__section--img grid-row-span-2" src={grid3} />
+          <img className="image__section--img" src={grid4} />
+          <img className="image__section--img grid-row-span-2" src={grid5} />
+          <img className="image__section--img" src={grid6} />
+        </div>
 
-        <div className="introduction-section">
-          <div className="side-by-side">
-            <p>
-              Sejam bem-vindos ao nosso site de casamento! Estamos muito felizes
-              em compartilhar este momento especial com todos vocês. Este site
-              foi criado para ajudá-los a obter todas as informações que
-              precisam para aproveitar ao máximo o nosso grande dia.
-            </p>
-            <img src={image1} alt="Casamento da Diana e do Tiago" />
-          </div>
-          <div className="side-by-side">
-            <p>
-              Nós não poderíamos estar mais animados para compartilhar este
-              momento com amigos e familiares queridos. Esperamos que vocês
-              encontrem todas as informações que precisam aqui, desde os
-              detalhes da cerimônia até as informações sobre hospedagem.
-            </p>
-            <img
-              className="side-by-side__alternate"
-              src={image2}
-              alt="Casamento da Diana e do Tiago"
-            />
-          </div>
-          <div className="side-by-side">
-            <p>
-              O nosso objetivo é tornar este dia incrível não apenas para nós,
-              mas também para cada um de vocês. Obrigado por fazer parte deste
-              momento e por nos ajudar a criar memórias que durarão para sempre.
-            </p>
-            <img src={image3} alt="Casamento da Diana e do Tiago" />
+        <div className="info__section">
+          <PopupButton
+            id="HPHgiG4V"
+            style={{ fontSize: 20 }}
+            className="my-button"
+          >
+            Confirma a tua presença
+          </PopupButton>
+        </div>
+        <div className="info__section-text">
+          <h2>Se tiverem alguma dúvida não hesitem em contactar-nos:</h2>
+          <h2>
+            Diana: <a href="tel:+351936213007">+351 936 213 007</a>
+          </h2>
+          <h2>
+            Tiago: <a href="tel:+351967793038">+351 967 793 038</a>
+          </h2>
+          <h2>
+            {" "}
+            Caso queiram surpreender os noivos e precisem de uma mãozinha,
+            contactem:{" "}
+          </h2>
+          <h2>
+            Sofia Rodrigues: <a href="tel:+351938737642">+351 938 737 642</a>
+          </h2>
+        </div>
+        <div className="mapouter">
+          <div className="gmap_canvas">
+            <iframe
+              className="gmap_iframe"
+              width="100%"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+              src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Quinta de Santo António - Casamentos, Batizados Guarda, Largo da Igreja, 6300-126&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+            ></iframe>
+            <a href="https://embed-googlemap.com">google maps code generator</a>
           </div>
         </div>
+
         <div className="section-invite">
           <img
             className="banner-img"
             src={convite}
             alt="Convite do casamento"
           />
-        </div>
-        <div className="banner_section">
-          <div className="banner_section--text_bottom">
-            <PopupButton
-              id="HPHgiG4V"
-              style={{ fontSize: 20 }}
-              className="my-button"
-            >
-              Confirma a tua presença
-            </PopupButton>
-          </div>
-          <img className="banner-img" src={rsvp} alt="RSVP do casamento" />
         </div>
       </main>
     </div>
