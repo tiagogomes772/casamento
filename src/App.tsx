@@ -67,10 +67,10 @@ function App() {
             <iframe
               className="gmap_iframe"
               width="100%"
-              frameborder="0"
+              frameBorder="0"
               scrolling="no"
-              marginheight="0"
-              marginwidth="0"
+              marginHeight={0}
+              marginWidth={0}
               src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Quinta de Santo António - Casamentos, Batizados Guarda, Largo da Igreja, 6300-126&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
             ></iframe>
             <a href="https://embed-googlemap.com">google maps code generator</a>
